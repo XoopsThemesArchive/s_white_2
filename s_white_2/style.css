@@ -1,0 +1,946 @@
+/* 全般設定 */
+* {padding:0; margin:0;}
+
+body {
+	color:#e5e5e5;
+	background:#540000;
+	font-size:12px;
+	line-height:130%;
+	text-align:center;
+}
+
+table {
+	width:100%;
+	border-collapse:collapse;
+}
+
+table td {
+	vertical-align:top;
+}
+
+th {
+	background:#555555;
+	color:#ddd;
+	background-image:url(th.gif);
+	background-repeat: repeat-x;
+	background-position: left top;
+	padding:2px;
+	vertical-align:middle;
+}
+
+th a {
+	color:#ddd;
+}
+
+/* 全般的なリンクの設定 */
+a {
+	color:#ddd;
+	text-decoration:underline;
+	font-weight:;
+}
+
+a:hover {
+	color:#777;
+}
+
+/* 一般タグの設定 */
+h1,h2,h3,h4,h5,p,b,i,u,form {
+	margin:0.5em 0;
+}
+
+/* リスト表示の設定 */
+ul {
+	margin:0px;
+	padding:2px;
+	list-style:decimal outside;
+	text-align:left;
+}
+
+li {
+	margin-left:15px;
+	list-style:square outside;
+	color:#ff9900;
+}
+
+input.formButton {}
+
+#container {
+	width:100%;
+	margin:0 auto;
+	text-align:left;
+}
+
+/* ヘッダーブロックの定義 */
+#headerlogo {
+	width:170px;
+	vertical-align:middle;
+	text-align:center;
+	padding-left:10px;
+}
+
+#headerbanner {
+	width:100%;
+	vertical-align:middle;
+	text-align:right;
+	padding-right:10px;
+}
+
+#headerbar {
+}
+
+/*トップメニュー定義*/
+.menu_link_b {
+	color:#e5e5e5;
+	padding:2px;
+	text-align:center;
+	vertical-align:middle;
+}
+.menu_link_b a{
+	color:#e5e5e5;
+	text-decoration: none;
+}
+
+.menu_link_b a:hover {
+	color:#ff9900;
+	text-decoration: none;
+}
+
+/*トップメニュー定義*/
+.menu_link {
+	color:#e5e5e5;
+	padding-right:10px;
+	text-align:right;
+	vertical-align:middle;
+}
+.menu_link a{
+	color:#e5e5e5;
+	text-decoration: none;
+}
+
+.menu_link a:hover {
+	color:#ff9900;
+	text-decoration: none;
+}
+
+/* 左ブロックの定義 */
+#leftcolumn {
+	width:170px;
+	background:#000000;
+}
+
+/*左ブロックタイトルの定義*/
+#leftcolumn .blockTitle {
+	padding:5px 0px 7px 0px;
+	color:#e5e5e5;
+	font-weight:bold;
+}
+
+/*左ブロックコンテンツの定義*/
+#leftcolumn .blockContent {
+	padding:5px 0 5px 0;
+}
+
+/* メインメニューの定義 */
+#mainmenu a {
+	display:block;
+	margin:0px;
+	padding:4px;
+}
+
+#mainmenu a:hover {
+	background:#222222;
+	border-right:5px solid #ff9900;
+}
+
+#mainmenu a.menuTop {
+	padding-left:3px;
+}
+
+#mainmenu a.menuMain {
+	padding-left:3px;
+}
+
+#mainmenu a.menuSub {
+	padding-left:9px;
+	border-left:5px solid #ff9900;
+}
+
+/* ユーザメニューの定義 */
+#usermenu a {
+	display:block;
+	margin:0px;
+	padding:4px;
+}
+
+#usermenu a:hover {
+	background:#222222;
+	border-right:5px solid #ff9900;
+}
+
+#usermenu a.menuTop {
+}
+
+#usermenu a.highlight {
+}
+
+
+/* 中央ブロックの定義 */
+#centercolumn {
+	padding:0px 10px 0px 10px;
+	background:#000000;
+}
+
+/* 中央-中央ブロックの定義 */
+#centerCcolumn {
+}
+#centerCcolumn .blockTitle {
+	padding:10px 5px 8px 15px;
+	color:#e5e5e5;
+	font-weight:bold;
+}
+#centerCcolumn .blockContent {
+	padding:5px;
+	background:#000000;
+}
+
+/* 中央-左ブロックの定義 */
+#centerLcolumn {
+	width:50%;
+	padding:0px 5px 0px 0px;
+	background:#000000;
+}
+
+#centerLcolumn .blockTitle {
+	padding:2px 0px 5px 0px;
+	color:#e5e5e5;
+	font-weight:bold;
+}
+
+#centerLcolumn .blockContent {
+}
+
+/* 中央-右ブロックの定義 */
+#centerRcolumn {
+	width:50%;
+	padding:0px 0px 0px 5px;
+	background:#000000;
+}
+
+#centerRcolumn .blockTitle {
+	padding:2px 0px 5px 0px;
+	color:#e5e5e5;
+	font-weight:bold;
+}
+
+#centerRcolumn .blockContent {
+}
+
+/* メインコンテンツの定義 */
+#content {
+	text-align:left;
+	padding:8px 0;
+}
+
+/* 右ブロックの定義 */
+#rightcolumn {
+	width:170px;
+}
+
+#rightcolumn .blockTitle {
+	padding:5px 0px 7px 0px;
+	color:#e5e5e5;
+	font-weight:bold;
+}
+
+#rightcolumn .blockContent {
+	padding:5px 0 5px 0;
+}
+
+/* フッタブロックの定義 */
+#footerbar {
+	text-align:center;
+/*	background-image:url(hbar.gif);
+*/	font-family:arial;
+	font-size:11px;
+	color:#f0f0f0;
+	padding-top:5px;
+}
+
+#footerbar a {
+	color:#f0f0f0;
+}
+
+#footerbar a:hover {
+	color:#777;
+}
+/* フォーラムなどの外枠 */
+.outer {
+}
+
+/* フォーラムなどの投稿情報欄 */
+.head {
+	background:#333333;
+	background-image:url(h_f.gif);
+	background-repeat: repeat-x;
+	background-position: left top;
+	padding:12px 5px 2px 5px;
+	font-weight:bold;
+}
+
+/* フォーラムなどの交互に色が変わる部分 */
+.even {
+	background:#222222;
+	background-image:url(even.gif);
+	background-repeat: repeat-x;
+	background-position: left top;
+	padding:5px;
+}
+
+.odd {
+	background:#151515;
+	background-image:url(odd.gif);
+	background-repeat: repeat-x;
+	background-position: left top;
+	padding:5px;
+}
+
+tr.even td {
+	background:#222222;
+	background-image:url(even.gif);
+	background-repeat: repeat-x;
+	background-position: left top;
+	padding:5px;
+}
+
+tr.odd td {
+	background:#151515;
+	background-image:url(odd.gif);
+	background-repeat: repeat-x;
+	background-position: left top;
+	padding:5px;
+}
+
+/* フォーラムなどのフッター */
+.foot {
+	background:#333333;
+	background-image:url(h_f.gif);
+	background-repeat: repeat-x;
+	background-position: left top;
+	padding:12px 5px 2px 5px;
+	font-weight:bold;
+}
+
+
+/* 最新ニュースの枠 */
+.item {
+}
+
+/* 最新ニュースのタイトルバー */
+.itemHead {
+	padding:5px 5px 2px 5px;
+	background:#333333;
+	background-image:url(i_head.gif);
+	background-repeat: repeat-x;
+	background-position: left top;
+	color:#e5e5e5;
+}
+
+/* 最新ニュースの投稿情報欄 */
+.itemInfo {
+	text-align:right;
+	padding:12px 5px 2px 5px;
+	background:#222222;
+	background-image:url(i_info.gif);
+	background-repeat: repeat-x;
+	background-position: left top;
+}
+
+/* 最新ニュースのタイトルの設定 */
+.itemTitle a {
+	font-size:120%;
+	font-weight:bold;
+	font-variant:small-caps;
+	color:#e5e5e5;
+}
+
+/* 最新ニュースの投稿者 */
+.itemPoster {
+	font-size:100%;
+}
+
+/* 最新ニュースの投稿日 */
+.itemPostDate {
+	font-size:100%;
+}
+
+/* 最新ニュースのステータス */
+.itemStats {
+	font-size:100%;
+}
+
+/* 最新ニュースのコンテンツ部分 */
+.itemBody {
+	padding:10px;
+	background:#111111;
+	background-image:url(i_body.gif);
+	background-repeat: repeat-x;
+	background-position: left top;
+}
+
+.itemText {
+	margin-top:5px;
+	margin-bottom:5px;
+	line-height:150%;
+}
+
+/* 最新ニュースの1文字目 */
+.itemText:first-letter {
+	font-size:150%;
+	font-weight:bold;
+}
+
+/* 最新ニュースのフッター */
+.itemFoot {
+	text-align:right;
+	padding:5px 5px 2px 5px;
+	background:#222222;
+	background-image:url(i_foot.gif);
+	background-repeat: repeat-x;
+	background-position: left top;
+}
+
+/*ページナビ*/
+span.pagenav_on {
+	font-size:15px;
+	text-decoration:none;
+	font-weight:bold;
+	background:#555555;
+	border: 1px solid #ffffff;
+	padding: 5px 8px;
+}
+span.pagenav_off {
+	font-size:15px;
+	background:#333333;
+	text-decoration:none;
+	border:1px solid #e5e5e5;
+	padding: 5px 8px;
+}
+
+/*マイリンク集の設定*/
+td#mylinks {
+	padding: 3px;
+	border-left: 2px dotted #f0f0f0;
+	border-top: 2px dotted #f0f0f0;
+}
+
+.itemAdminLink {
+	font-size:100%;
+}
+
+.itemPermaLink {
+	font-size:100%;
+}
+
+/* システムメッセージ */
+div.errorMsg {
+	background:#ffcccc;
+	text-align:center;
+	border-top:1px solid #ddddff;
+	border-left:1px solid #ddddff;
+	border-right:1px solid #aaaaaa;
+	border-bottom:1px solid #aaaaaa;
+	font-weight:bold;
+	padding:10px;
+}
+
+div.confirmMsg {
+	background:#ddffdf;
+	color:#136c99;
+	text-align:center;
+	border-top:1px solid #ddddff;
+	border-left:1px solid #ddddff;
+	border-right:1px solid #aaaaaa;
+	border-bottom:1px solid #aaaaaa;
+	font-weight:bold;
+	padding:10px;
+}
+
+div.resultMsg {
+	background:#cccccc;
+	color:#333333;
+	text-align:center;
+	border-top:1px solid silver;
+	border-left:1px solid silver;
+	font-weight:bold;
+	border-right:1px solid #666666;
+	border-bottom:1px solid #666666;
+	padding:10px;
+}
+
+/* Xoopsコードを記述する部分 */
+div.xoopsCode {
+	background:#ffffff;
+	border:1px inset #000080;
+	padding:0px 6px 6px 6px;
+}
+
+/* 引用部分の定義 */
+div.xoopsQuote {
+	background:#555555;
+	border:1px inset #000080;
+	padding:0px 6px 6px 6px;
+}
+
+.comTitle {
+	font-weight:bold;
+	margin-bottom:2px;
+}
+
+.comText {
+	padding:2px;
+}
+
+.comUserStat {
+	font-size:10px;
+	color:#e5e5e5;
+	font-weight:normal;
+	border:1px solid #f0f0f0;
+	background:#555555;
+	margin:2px;
+	padding:2px;
+}
+
+.comUserStatCaption {
+	font-weight:normal;
+}
+
+.comUserStatus {
+	margin-left:2px;
+	margin-top:10px;
+	color:#f0f0f0;
+	font-weight:normal;
+	font-size:10px;
+}
+
+.comUserRank {
+	margin:2px;
+}
+
+.comUserRankText {
+	font-size:10px;
+	font-weight:bold;
+}
+
+.comUserRankImg {
+	border:0px;
+}
+
+.comUserName {}
+
+.comUserImg {
+	margin:2px;
+}
+
+.comDate {
+	font-weight:normal;
+	font-style:normal;
+	font-size:small;
+}
+
+.comDateCaption {
+	font-weight:normal;
+	font-style:normal;
+}
+
+/*大枠定義*/
+#w1_1 {
+	width:5px;
+	height:5px;
+}
+#w1_2 {}
+#w1_3 {
+	width:5px;
+}
+#w2_1 {}
+#w2_2 {}
+#w2_3 {}
+#w3_1 {
+	height:5px;
+}
+#w3_2 {}
+#w3_3 {}
+/*大枠終了*/
+
+/*ヘッダ部分定義*/
+#h1_1 {}
+#h1_2 {}
+#h1_3 {}
+#h2 {}
+#h2_2 {}
+#h2_3 {}
+#h3 {}
+#h3_2 {}
+#h3_3 {}
+#h4 {
+	height:5px;
+	background-image:url(.gif);
+	background-repeat: repeat-y;
+	background-position: right top;
+}
+#h5 {}
+#h6 {
+	height:5px;
+	background-image:url(.gif);
+	background-repeat: repeat-y;
+	background-position: left top;
+}
+/*ヘッダ部分終了*/
+
+/*ボディ定義*/
+#b1_1 {
+	width:10px;
+	height:10px;
+	background-image:url(b1_1.gif);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+}
+#b1_2 {
+	background-image:url(b1_2.gif);
+	background-repeat: repeat-x;
+	background-position: left bottom;
+}
+#b1_3 {
+	width:10px;
+	background-image:url(b1_3.gif);
+	background-repeat: no-repeat;
+	background-position: left bottom;
+}
+#b2_1 {
+	background-image:url(b2_1.gif);
+	background-repeat: repeat-y;
+	background-position: right top;
+}
+#b2_2 {	
+	background:#000000;
+}
+#b2_3 {	background-image:url(b2_3.gif);
+	background-repeat: repeat-y;
+	background-position: left top;
+}
+#b3_1 {
+	height:10px;
+	background-image:url(b3_1.gif);
+	background-repeat: no-repeat;
+	background-position: right top;
+}
+#b3_2 {
+	background-image:url(b3_2.gif);
+	background-repeat: repeat-x;
+	background-position: left top;
+}
+#b3_3 {
+	background-image:url(b3_3.gif);
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+/*ボディ終了*/
+
+/*右ブロック定義*/
+#r1_1 {
+	width:5px;
+	height:5px;
+	background-image:url(l1_1.gif);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+}
+#r1_2 {	
+	background-image:url(l1_2.gif);
+	background-repeat: repeat-x;
+	background-position: left bottom;
+}
+#r1_3 {
+	width:5px;
+	background-image:url(l1_3.gif);
+	background-repeat: no-repeat;
+	background-position: left bottom;
+}
+#r2_1 {	
+	background-image:url(l2_1.gif);
+	background-repeat: no-repeat;
+	background-position: right top;
+}
+#r2_2 {	
+	background-image:url(l2_2.gif);
+	background-repeat: repeat-x;
+	background-position: left top;
+}
+#r2_3 {	
+	background-image:url(l2_3.gif);
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+#r3_1 {
+	background-image:url(l3_1.gif);
+	background-repeat: repeat-y;
+	background-position: right top;
+}
+#r3_2 {
+	background-image:url(l3_2.gif);
+	background-repeat: repeat-y;
+	background-position: center;
+}
+#r3_3 {
+	background-image:url(l3_3.gif);
+	background-repeat: repeat-y;
+	background-position: left top;
+}
+#r4_1 {
+	height:20px;
+	background-image:url(l4_1.gif);
+	background-repeat: no-repeat;
+	background-position: right top;
+}
+#r4_2 {	background-image:url(l4_2.gif);
+	background-repeat: repea-xt;
+	background-position: left top;
+}
+#r4_3 {	background-image:url(l4_3.gif);
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+/*右ブロック終了*/
+
+/*左ブロック定義*/
+#l1_1 {
+	width:5px;
+	height:5px;
+	background-image:url(l1_1.gif);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+}
+#l1_2 {	
+	background-image:url(l1_2.gif);
+	background-repeat: repeat-x;
+	background-position: left bottom;
+}
+#l1_3 {
+	width:5px;
+	background-image:url(l1_3.gif);
+	background-repeat: no-repeat;
+	background-position: left bottom;
+}
+#l2_1 {	
+	background-image:url(l2_1.gif);
+	background-repeat: no-repeat;
+	background-position: right top;
+}
+#l2_2 {	
+	background-image:url(l2_2.gif);
+	background-repeat: repeat-x;
+	background-position: left top;
+}
+#l2_3 {	
+	background-image:url(l2_3.gif);
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+#l3_1 {
+	background-image:url(l3_1.gif);
+	background-repeat: repeat-y;
+	background-position: right top;
+}
+#l3_2 {
+	background-image:url(l3_2.gif);
+	background-repeat: repeat-y;
+	background-position: center;
+}
+#l3_3 {
+	background-image:url(l3_3.gif);
+	background-repeat: repeat-y;
+	background-position: left top;
+}
+#l4_1 {
+	height:20px;
+	background-image:url(l4_1.gif);
+	background-repeat: no-repeat;
+	background-position: right top;
+}
+#l4_2 {	background-image:url(l4_2.gif);
+	background-repeat: repea-xt;
+	background-position: left top;
+}
+#l4_3 {	background-image:url(l4_3.gif);
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+/*左ブロック終了*/
+
+/*中央中央ブロック定義*/
+#cc1_1 {}
+#cc1_2 {}
+#cc1_3 {}
+#cc2_1 {
+	width:5px;
+	background-image:url(cc2_1.gif);
+	background-repeat: no-repeat;
+	background-position: right top;
+}
+#cc2_2 {background-image:url(cc2_2.gif);
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+#cc2_3 {}
+#cc3_1 {}
+#cc3_2 {}
+#cc3_3 {}
+#cc4_1 {}
+#cc4_2 {}
+#cc4_3 {}
+/*中央中央ブロック終了*/
+
+/*中央左ブロック定義*/
+#cl1_1 {
+	width:5px;
+	height:5px;
+	background-image:url(cl1_1.gif);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+}
+#cl1_2 {	
+	background-image:url(cl1_2.gif);
+	background-repeat: repeat-x;
+	background-position: left bottom;
+}
+#cl1_3 {
+	width:5px;
+	background-image:url(cl1_3.gif);
+	background-repeat: no-repeat;
+	background-position: left bottom;
+}
+#cl2_1 {	
+	background-image:url(cl2_1.gif);
+	background-repeat: no-repeat;
+	background-position: right top;
+}
+#cl2_2 {	
+	background-image:url(cl2_2.gif);
+	background-repeat: repeat-x;
+	background-position: left top;
+}
+#cl2_3 {	
+	background-image:url(cl2_3.gif);
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+#cl3_1 {
+	background-image:url(cl3_1.gif);
+	background-repeat: repeat-y;
+	background-position: right top;
+}
+#cl3_2 {
+}
+#cl3_3 {
+	background-image:url(cl3_3.gif);
+	background-repeat: repeat-y;
+	background-position: left top;
+}
+#cl4_1 {
+	height:20px;
+	background-image:url(cl4_1.gif);
+	background-repeat: no-repeat;
+	background-position: right top;
+}
+#cl4_2 {
+	background-image:url(cl4_2.gif);
+	background-repeat: repea-xt;
+	background-position: left top;
+}
+#cl4_3 {
+	background-image:url(cl4_3.gif);
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+/*中央左ブロック終了*/
+
+/*中央右ブロック定義*/
+#cr1_1 {
+	width:5px;
+	height:5px;
+	background-image:url(cl1_1.gif);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+}
+#cr1_2 {	
+	background-image:url(cl1_2.gif);
+	background-repeat: repeat-x;
+	background-position: left bottom;
+}
+#cr1_3 {
+	width:5px;
+	background-image:url(cl1_3.gif);
+	background-repeat: no-repeat;
+	background-position: left bottom;
+}
+#cr2_1 {	
+	background-image:url(cl2_1.gif);
+	background-repeat: no-repeat;
+	background-position: right top;
+}
+#cr2_2 {	
+	background-image:url(cl2_2.gif);
+	background-repeat: repeat-x;
+	background-position: left top;
+}
+#cr2_3 {	
+	background-image:url(cl2_3.gif);
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+#cr3_1 {
+	background-image:url(cl3_1.gif);
+	background-repeat: repeat-y;
+	background-position: right top;
+}
+#cr3_2 {
+}
+#cr3_3 {
+	background-image:url(cl3_3.gif);
+	background-repeat: repeat-y;
+	background-position: left top;
+}
+#cr4_1 {
+	height:20px;
+	background-image:url(cl4_1.gif);
+	background-repeat: no-repeat;
+	background-position: right top;
+}
+#cr4_2 {
+	background-image:url(cl4_2.gif);
+	background-repeat: repea-xt;
+	background-position: left top;
+}
+#cr4_3 {
+	background-image:url(cl4_3.gif);
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+/*中央右ブロック終了*/
+
+/*フッタブロック定義*/
+#f1_1 {
+	width:5px;
+	height:5px;
+}
+#f1_2 {}
+#f1_3 {
+	width:5px;
+}
+#f2_1 {}
+#f2_2 {}
+#f2_3 {}
+#f3_1 {
+	height:5px;
+}
+#f3_2 {}
+#f3_3 {}
+/*フッタブロック終了*/

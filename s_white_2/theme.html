@@ -1,0 +1,198 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<{$xoops_langcode}>" lang="<{$xoops_langcode}>">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=<{$xoops_charset}>" />
+<meta http-equiv="content-language" content="<{$xoops_langcode}>" />
+<meta name="robots" content="<{$xoops_meta_robots}>" />
+<meta name="keywords" content="<{$xoops_meta_keywords}>" />
+<meta name="description" content="<{$xoops_meta_description}>" />
+<meta name="rating" content="<{$xoops_meta_rating}>" />
+<meta name="author" content="<{$xoops_meta_author}>" />
+<meta name="copyright" content="<{$xoops_meta_copyright}>" />
+<meta name="generator" content="XOOPS" />
+<title><{$xoops_sitename}> - <{$xoops_pagetitle}></title>
+<link href="<{$xoops_url}>/favicon.ico" rel="SHORTCUT ICON" />
+<link rel="stylesheet" type="text/css" media="all" href="<{$xoops_url}>/xoops.css" />
+<link rel="stylesheet" type="text/css" media="all" href="<{$xoops_themecss}>" />
+<!-- RMV: added module header -->
+<{$xoops_module_header}>
+<script type="text/javascript">
+<!--
+<{$xoops_js}>
+//-->
+</script>
+</head>
+
+<body>
+<div id="container">
+
+<!--大枠定義-->
+<table cellspacing="0">
+<tr><td id="w1_1"></td><td id="w1_2"></td><td id="w1_3"></td></tr>
+<tr><td id="w2_1"></td><td id="w2_2">
+<!--大枠終了-->
+
+<!-- ヘッダ部分の定義 -->
+<table cellspacing="0">
+	<tr><td id="h1_1"></td><td id="h1_2" colspan="2"></td><td id="h1_3"></td></tr>
+	<tr><td id="h2" colspan="4"></td></tr>
+	<tr>
+		<td id="h3" colspan="4"></td>
+	</tr>
+	<tr><td id="h4" colspan="4"></td></tr>
+	<tr>
+		<td id="h5_1"></td>
+		<td id="headerlogo">
+			<a href="<{$xoops_url}>/"><img src="<{$xoops_imageurl}>logo.gif" alt="" /></a>
+		</td>
+		<td id="headerbanner"><{$xoops_banner}></td>
+		<td id="5_2"></td>
+	</tr>
+	<tr><td id="h6" colspan="4"></td></tr>
+</table>
+<!-- ヘッダ部分終わり -->
+
+<!--ボディ枠定義-->
+<table cellspacing="0">
+<tr><td id="b1_1"></td><td id="b1_2"></td><td id="b1_3"></td></tr>
+<tr><td id="b2_1"></td><td id="b2_2">
+<!--ボディ枠終了-->
+
+<table cellspacing="0">
+	<tr>
+<!-- 左ブロック部分の定義 -->
+        <{if $xoops_showlblock == 1}>
+		<td id="leftcolumn">
+			<{foreach item=block from=$xoops_lblocks}>
+<table cellspacing="0">
+	<tr><td id="l1_1"></td><td id="l1_2"></td><td id="l1_3"></td></tr>
+	<tr><td id="l2_1"></td><td id="l2_2">
+			<{if ! $block.title|strstr:"none"}>
+				<div class="blockTitle"><img src="<{$xoops_imageurl}>icon_t.gif">&nbsp;<{$block.title}></div>
+			<{/if}>
+	</td><td id="l2_3"></td></tr>
+	<tr><td id="l3_1"></td><td id="l3_2">
+				<div class="blockContent"><{$block.content}></div>
+	</td><td id="l3_3"></td></tr>
+	<tr><td id="l4_1"></td><td id="l4_2"></td><td id="l4_3"></td></tr>
+</table>
+			<{/foreach}>
+		</td>
+	<{/if}>
+<!-- 左ブロック終わり -->
+<!-- メイン部分の定義 -->
+		<td id="centercolumn">
+		<{if $xoops_showcblock == 1}>
+		<table cellspacing="0">
+			<tr>
+  <!-- 中央-中央ブロック部分の定義 -->
+				<td id="centerCcolumn" colspan="2">
+					<{foreach item=block from=$xoops_ccblocks}>
+<table cellspacing="0">
+	<tr><td id="cc1_1"></td><td id="cc1_2"></td><td id="cc1_3"></td></tr>
+	<tr><td id="cc2_1"></td><td id="cc2_2">
+			<{if ! $block.title|strstr:"none"}>
+				<div class="blockTitle"><img src="<{$xoops_imageurl}>icon_ct.gif">&nbsp;<{$block.title}></div>
+			<{/if}>
+	</td><td id="cc2_3"></td></tr>
+	<tr><td id="cc3_1"></td><td id="cc3_2">
+				<div class="blockContent"><{$block.content}></div>
+	</td><td id="cc3_3"></td></tr>
+	<tr><td id="cc4_1"></td><td id="cc4_2"></td><td id="cc4_3"></td></tr>
+</table>
+					<{/foreach}>
+				</td>
+  <!-- 中央-中央ブロック部分終わり -->
+			</tr>
+			<tr>
+  <!-- 中央-左ブロック部分の定義 -->
+				<td id="centerLcolumn">
+					<{foreach item=block from=$xoops_clblocks}>
+<table cellspacing="0">
+	<tr><td id="cl1_1"></td><td id="cl1_2"></td><td id="cl1_3"></td></tr>
+	<tr><td id="cl2_1"></td><td id="cl2_2">
+			<{if ! $block.title|strstr:"none"}>
+				<div class="blockTitle"><img src="<{$xoops_imageurl}>icon_t.gif">&nbsp;<{$block.title}></div>
+			<{/if}>
+	</td><td id="cl2_3"></td></tr>
+	<tr><td id="cl3_1"></td><td id="cl3_2">
+				<div class="blockContent"><{$block.content}></div>
+	</td><td id="cl3_3"></td></tr>
+	<tr><td id="cl4_1"></td><td id="cl4_2"></td><td id="cl4_3"></td></tr>
+</table>
+					<{/foreach}>
+				</td>
+  <!-- 中央-左ブロック部分終わり -->
+  <!-- 中央-右ブロック部分の定義 -->
+				<td id="centerRcolumn">
+					<{foreach item=block from=$xoops_crblocks}>
+<table cellspacing="0">
+	<tr><td id="cr1_1"></td><td id="cr1_2"></td><td id="cr1_3"></td></tr>
+	<tr><td id="cr2_1"></td><td id="cr2_2">
+			<{if ! $block.title|strstr:"none"}>
+				<div class="blockTitle"><img src="<{$xoops_imageurl}>icon_t.gif">&nbsp;<{$block.title}></div>
+			<{/if}>
+	</td><td id="cr2_3"></td></tr>
+	<tr><td id="cr3_1"></td><td id="cr3_2">
+				<div class="blockContent"><{$block.content}></div>
+	</td><td id="cr3_3"></td></tr>
+	<tr><td id="cr4_1"></td><td id="cr4_2"></td><td id="cr4_3"></td></tr>
+</table>
+					<{/foreach}>
+				</td>
+  <!-- 中央-右ブロック部分終わり -->
+			</tr>
+		</table>
+		<{/if}>
+  <!-- メインコンテンツ -->
+			<div id="content"><{$xoops_contents}></div>
+		</td>
+<!-- メイン部分終わり -->
+<!-- 右ブロック部分の定義 -->
+      <{if $xoops_showrblock == 1}>
+		<td id="rightcolumn">
+			<{foreach item=block from=$xoops_rblocks}>
+<table cellspacing="0">
+	<tr><td id="r1_1"></td><td id="r1_2"></td><td id="r1_3"></td></tr>
+	<tr><td id="r2_1"></td><td id="r2_2">
+			<{if ! $block.title|strstr:"none"}>
+				<div class="blockTitle"><img src="<{$xoops_imageurl}>icon_t.gif">&nbsp;<{$block.title}></div>
+			<{/if}>
+	</td><td id="r2_3"></td></tr>
+	<tr><td id="r3_1"></td><td id="r3_2">
+				<div class="blockContent"><{$block.content}></div>
+	</td><td id="r3_3"></td></tr>
+	<tr><td id="r4_1"></td><td id="r4_2"></td><td id="r4_3"></td></tr>
+</table>
+			<{/foreach}>
+		</td>
+	<{/if}>
+<!-- 右ブロック部分終わり -->
+	</tr>
+</table>
+
+<!--ボディ定義-->
+</td><td id="b2_3"></td></tr>
+<tr><td id="b3_1"></td><td id="b3_2"></td><td id="b3_3"></td></tr>
+</table>
+<!--ボディ終了-->
+
+<!-- フッタ部分の定義 -->
+<table cellspacing="0">
+	<tr><td id="f1_1"></td><td id="f1_2"></td><td id="f1_3"></td></tr>
+	<tr><td id="f2_1"></td><td id="footerbar">
+		<{$xoops_footer}>&nbsp;&nbsp;Theme Designed by <a href="http://portal.expiece.com/" target="_blank">EXTRAFFIC</a>
+		</td><td id="f2_3"></td></tr>
+	<tr><td id="f3_1"></td><td id="f3_2"></td><td id="f3_3"></td></tr>
+</table>
+<!-- フッタ部分終わり -->
+
+<!--大枠定義-->
+</td><td id="w2_3"></td></tr>
+<tr><td id="w3_1"></td><td id="w3_2"></td><td id="w3_3"></td></tr>
+</table>
+<!--大枠終了-->
+
+</div>
+</body>
+</html>
